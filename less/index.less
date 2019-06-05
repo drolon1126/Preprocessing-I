@@ -54,6 +54,50 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+}
+
+.container{
+	width: 80%;
+	margin: 0 auto;
+	header{
+		border: 1px solid red;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		nav{
+			display: flex;
+			justify-content: flex-start;
+		}
+		.hero{
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			.header-title{
+				width: 75%;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: flex-end;
+				h1{
+					font-size: 3em;
+				}
+			}
+			.header-img{
+				width:20%;
+				height:20rem;
+				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+				img{
+					width:100%;
+					height: 18rem;
+					border: 2px solid blue;
+					border-radius: 80%;
+					margin-right: 5%;
+				}
+			}
+		}
+	}
 }
 
