@@ -141,13 +141,14 @@ body {
   background: #778db2;
 }
 .container header {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   background: #585c63;
 }
 .container header nav {
+  border-bottom: 2px solid #181819;
+  padding: 0.8rem 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -160,6 +161,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  box-shadow: inset 2px 2px 15px 5px #181819;
 }
 .container header .hero .header-title {
   width: 75%;
@@ -181,19 +183,29 @@ body {
 .container header .hero .header-img img {
   width: 100%;
   height: 15vw;
-  border: 2px solid blue;
+  border: 4px solid #778db2;
   border-radius: 90%;
   margin-right: 5%;
 }
 .container #contact {
   background: #181819;
   color: white;
+  padding: 2rem 0;
 }
 .container #contact ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
+}
+.container hr.big {
+  border: 8px solid #181819;
+}
+.container hr.med {
+  border: 3px solid #181819;
+}
+.container hr.sm {
+  border: 1px solid #181819;
 }
 .container #content article {
   display: flex;
@@ -203,7 +215,16 @@ body {
 .container #content article .history {
   position: relative;
   width: 48%;
-  margin: 0 auto;
+  margin: 2rem auto;
+  border: 4px outset #585c63;
+  box-shadow: 5px 5px 15px 0px #181819;
+  border-radius: 20px;
+}
+.container #content article .history h2 {
+  font-size: 1.5em;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 2.5rem;
 }
 .container #content article .history .tl-container {
   padding: 10px 40px;
@@ -217,8 +238,8 @@ body {
   width: 25px;
   height: 25px;
   right: -17px;
-  background-color: white;
-  border: 4px solid #FF9F55;
+  background-color: #c9d9ed;
+  border: 4px solid #585c63;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -237,9 +258,9 @@ body {
   width: 0;
   z-index: 1;
   right: 30px;
-  border: medium solid white;
+  border: medium solid #c9d9ed;
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent white;
+  border-color: transparent transparent transparent #c9d9ed;
 }
 .container #content article .history .right::before {
   content: " ";
@@ -249,16 +270,16 @@ body {
   width: 0;
   z-index: 1;
   left: 30px;
-  border: medium solid white;
+  border: medium solid #c9d9ed;
   border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
+  border-color: transparent #c9d9ed transparent transparent;
 }
 .container #content article .history .right::after {
   left: -16px;
 }
 .container #content article .history .tl-content {
   padding: 20px 30px;
-  background-color: white;
+  background-color: #c9d9ed;
   position: relative;
   border-radius: 6px;
 }
@@ -266,7 +287,7 @@ body {
   content: '';
   position: absolute;
   width: 6px;
-  background-color: white;
+  background-color: #c9d9ed;
   top: 0;
   bottom: 0;
   left: 50%;
