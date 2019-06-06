@@ -78,6 +78,9 @@ html, body {
 	width: 80%;
 	margin: 0 auto;
 	background: @color-style3;
+	@media (max-width:800px){
+		width: 95%;
+	}
 	header{
 		display: flex;
 		flex-direction: column;
@@ -146,6 +149,9 @@ html, body {
 	#content{
 		article{
 			.flex-prop(space-between,center);
+			@media (max-width:800px){
+				flex-direction: column;
+			}
 			.history{
 				position: relative;
 				width: 48%;
@@ -153,6 +159,10 @@ html, body {
 				border: 4px outset @color-style1;
 				box-shadow: 5px 5px 15px 0px @color-style2;
 				border-radius: 20px;
+
+				@media (max-width:800px){
+					width: 95%;
+				}
 
 				h2{
 					font-size: 1.5em;
@@ -249,6 +259,10 @@ html, body {
 				.flex-prop(center, center);
 				flex-direction: column;
 				margin-right: 1rem;
+
+				@media (max-width:800px){
+					width: 95%;
+				}
 
 				.intro{
 					width: 70%;

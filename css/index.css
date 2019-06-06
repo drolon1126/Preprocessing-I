@@ -140,6 +140,11 @@ body {
   margin: 0 auto;
   background: #778db2;
 }
+@media (max-width: 800px) {
+  .container {
+    width: 95%;
+  }
+}
 .container header {
   display: flex;
   flex-direction: column;
@@ -213,6 +218,11 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 800px) {
+  .container #content article {
+    flex-direction: column;
+  }
+}
 .container #content article .history {
   position: relative;
   width: 48%;
@@ -220,6 +230,11 @@ body {
   border: 4px outset #585c63;
   box-shadow: 5px 5px 15px 0px #181819;
   border-radius: 20px;
+}
+@media (max-width: 800px) {
+  .container #content article .history {
+    width: 95%;
+  }
 }
 .container #content article .history h2 {
   font-size: 1.5em;
@@ -311,6 +326,11 @@ body {
   align-items: center;
   flex-direction: column;
   margin-right: 1rem;
+}
+@media (max-width: 800px) {
+  .container #content article .about {
+    width: 95%;
+  }
 }
 .container #content article .about .intro {
   width: 70%;
