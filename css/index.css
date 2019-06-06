@@ -1,1 +1,313 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  background: #778db2;
+}
+.container header {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background: #585c63;
+}
+.container header nav {
+  border-bottom: 2px solid #181819;
+  padding: 0.8rem 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.container header nav a {
+  text-decoration: none;
+  color: lightgrey;
+}
+.container header .hero {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: inset 2px 2px 15px 5px #181819;
+}
+.container header .hero .header-title {
+  width: 75%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.container header .hero .header-title h1 {
+  font-size: 3em;
+}
+.container header .hero .header-img {
+  width: 20%;
+  height: 20rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.container header .hero .header-img img {
+  width: 100%;
+  height: 15vw;
+  border: 4px solid #778db2;
+  border-radius: 90%;
+  margin-right: 5%;
+}
+.container #contact {
+  background: #181819;
+  color: white;
+  padding: 2rem 0;
+}
+.container #contact ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+.container hr.big {
+  border: 8px solid #181819;
+}
+.container hr.med {
+  border: 3px solid #181819;
+}
+.container hr.sm {
+  border: 1px solid #181819;
+}
+.container #content article {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container #content article .history {
+  position: relative;
+  width: 48%;
+  margin: 2rem auto;
+  border: 4px outset #585c63;
+  box-shadow: 5px 5px 15px 0px #181819;
+  border-radius: 20px;
+}
+.container #content article .history h2 {
+  font-size: 1.5em;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 2.5rem;
+}
+.container #content article .history .tl-container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+.container #content article .history .tl-container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: #c9d9ed;
+  border: 4px solid #585c63;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+.container #content article .history .left {
+  left: 0;
+}
+.container #content article .history .right {
+  left: 50%;
+}
+.container #content article .history .left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid #c9d9ed;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #c9d9ed;
+}
+.container #content article .history .right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid #c9d9ed;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #c9d9ed transparent transparent;
+}
+.container #content article .history .right::after {
+  left: -16px;
+}
+.container #content article .history .tl-content {
+  padding: 20px 30px;
+  background-color: #c9d9ed;
+  position: relative;
+  border-radius: 6px;
+}
+.container #content article .history::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #c9d9ed;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+.container #content article .about {
+  width: 48%;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container #content article .about .intro {
+  width: 70%;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+}
+.container #content article .about .skills {
+  width: 70%;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+}
